@@ -1,0 +1,11 @@
+<p>
+  entry-list works!
+</p>
+
+<ul>
+  <li *ngFor="let entrada of entries">
+    <p>{{entrada.title}}</p>
+    <p>{{entrada.date}}</p>
+    <a [routerLink]="[entrada._id]"> Select Movie</a>
+  </li>
+</ul>
